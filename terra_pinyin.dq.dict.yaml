@@ -1,0 +1,12 @@
+# /data/terra_pinyin.dq.dict.yaml
+
+---
+name: terra_pinyin.dq
+version: "20210920"
+sort: by_weight
+use_preset_vocabulary: true
+import_tables:
+  - terra_pinyin  # 母表
+
+...
+

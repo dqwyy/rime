@@ -1,0 +1,79 @@
+﻿# data/liangfen.schema.yaml  20210919
+
+schema:
+  schema_id: liangfen
+  name: 兩分
+  version: "20210919"
+  author:
+    - TianHeng <2417647441@qq.com>
+  description: |
+    Use《http://yedict.com/》
+    http://yedict.com/
+    Dict is from http://yedict.com/
+
+switches:
+  - name: ascii_mode
+    reset: 0
+  - name: simplification
+    reset: 1
+  - name: gbk   # 依賴engine/filters:  - charset_filter@gbk
+    states: ["擴展","基本"]
+    reset: 1
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+#    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator  #改用碼表翻譯器以取消簡拼組詞，強制每次只打一個字
+#    - r10n_translator
+    - reverse_lookup_translator
+
+  filters:
+    - simplifier
+    - uniquifier
+    - charset_filter@gbk   #用於支援gbk開關
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+#    - abbrev/^([a-z]).+$/$1/   # 取消首字母簡拼
+#    - derive///   # 以後可能要加一些部首的別名，但是可能會造成重碼增多，所以擱置，有閒或許會編寫兩分輸入法介紹
+
+translator:
+  dictionary: liangfen
+#  spelling_hints: 4
+  preedit_format:
+    - "xlit|v|ü|"
+    - xform/iü/iv/
+  comment_format:
+    - "xlit|v|ü|"
+    - xform/iü/iv/
+##  enable_charset_filter: true  #開啟字符集過濾器以支援開關（無法過濾CJK擴展G，已改用engine/filters:  - charset_filter@gbk）
+  enable_sentence: false  #關閉太極連打，強制每次只打一個字
+
+punctuator:
+  import_preset: default
+
+menu:
+  page_size: 9
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default

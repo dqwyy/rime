@@ -1,0 +1,42 @@
+# %APPDATA%/stroke.custom.yaml 20210919
+patch:
+  schema/name: "筆畫"
+  schema/version: "20210919"
+  switches:
+    - name: ascii_mode
+      reset: 0
+    - name: gbk   # 依賴engine/filters/charset_filter@gbk
+      states: ["擴展","基本"]
+      reset: 1
+
+# 關閉反查
+  schem/dependencies:
+  reverse_lookup:
+  recognizer/patterns/reverse_lookup:
+
+  translator/enable_sentence: false  #關閉太極連打，強制每次只打一個字
+##  enable_charset_filter: true  #開啟字符集過濾器以支援開關（無法過濾CJK擴展G，已改用engine/filters:  - charset_filter@gbk）
+
+  speller/algebra:
+    - xform/n/d/  #刪除捺，正名為點
+# 以下設置別名失敗了，同一個字中無法混用別名
+#    - derive/n/d/
+#    - derive/h/t/
+
+  translator/preedit_format:
+#    - xlit/hspdz/横豎撇點折/
+  translator/comment_format:
+    - xlit/n/d/  # 提示碼「捺」顯示為「點」
+#    - xform/~//
+
+  engine/processors:
+      - ascii_composer
+      - recognizer
+      - key_binder
+      - speller
+#      - punctuator
+      - selector
+      - navigator
+      - express_editor
+  engine/filters:
+    - charset_filter@gbk   #用於支援gbk開關
