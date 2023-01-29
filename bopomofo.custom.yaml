@@ -1,6 +1,6 @@
-# %APPDATA/bopomofo.custom.yaml  20230126
+# %APPDATA/bopomofo.custom.yaml  20230129
 patch:
-  schema/version: '20230126'
+  schema/version: '20230129'
   engine/processors:
     - ascii_composer
     - recognizer
@@ -43,11 +43,11 @@ patch:
       reset: 1
     - name: full_shape
     - name: ascii_punct
-    - options: [zh_hant, zh_cn, zh_tw]
-      states: ["繁", "簡", "臺"]
-      reset: 1   # 默認第二選項，即簡體
-#    - name: simplification    # 默認輸出簡體字，繁體字則為OpenCC標準，不喜歡，故改用他法
-#      reset: 1
+#    - options: [zh_hant, zh_cn, zh_tw]
+#      states: ["繁", "簡", "臺"]
+#      reset: 1   # 默認第二選項，即簡體
+    - name: simplification    # 默認輸出簡體字，繁體字則為OpenCC標準，不喜歡，故改用他法
+      reset: 1
   engine/filters:
     - simplifier@zh_tw
     - simplifier@zh_cn
