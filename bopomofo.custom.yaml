@@ -49,6 +49,7 @@ patch:
     - name: simplification    # 默認輸出簡體字，繁體字則為OpenCC標準，不喜歡，故改用他法
       reset: 1
   engine/filters:
+    - simplifier
     - simplifier@zh_tw
     - simplifier@zh_cn
     - uniquifier
