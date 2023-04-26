@@ -7,7 +7,7 @@ patch:
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
     - {accept: "Control+Shift+F", toggle: simplification, when: always}
-    - {accept: "Shift+space", toggle: full_shape, when: always}
+#    - {accept: "Shift+space", toggle: full_shape, when: always}
     - {accept: "Control+period", toggle: ascii_punct, when: always}
     - {accept: "Control+Shift+C", toggle: gbk, when: always}
 #    - {accept: "Control+Shift+C", toggle: extended_charset, when: always}   # 這個本來是很好的，但是居然不能過濾掉CJK擴展G的字
