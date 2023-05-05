@@ -1,4 +1,4 @@
-# %APPDATA%/default.custom.yaml  20230426
+# %APPDATA%/default.custom.yaml  20230505
 patch:
   "ascii_composer/switch_key":
     Shift_L: noop
