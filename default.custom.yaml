@@ -16,6 +16,7 @@ patch:
     - {schema: bopomofo}
     - {schema: liangfen}
     - {schema: stroke}
+    - {schema: luna_pinyin}
 #    - {schema: dieziu}
   "switcher/hotkeys":
     - "Control+Shift+O"
