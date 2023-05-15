@@ -1,4 +1,4 @@
-# %APPDATA%/default.custom.yaml  20230505
+# %APPDATA%/default.custom.yaml  20210919
 patch:
   "ascii_composer/switch_key":
     Shift_L: noop
@@ -14,9 +14,9 @@ patch:
 
   schema_list:
     - {schema: bopomofo}
+    - {schema: luna_pinyin}
     - {schema: liangfen}
     - {schema: stroke}
-    - {schema: luna_pinyin}
 #    - {schema: dieziu}
   "switcher/hotkeys":
     - "Control+Shift+O"
