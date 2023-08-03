@@ -1,5 +1,6 @@
-# %APPDATA%/weasel.custom.yaml  20210919
+# weasel.custom.yaml
 patch:
+  "config_version": "20210919"
   "style/color_scheme": dqwyy #skype
   "style/display_tray_icon": false
   "style/font_face": Yunlin Sans
