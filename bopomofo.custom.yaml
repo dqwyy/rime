@@ -1,6 +1,6 @@
 # %APPDATA/bopomofo.custom.yaml  20230426
 patch:
-  schema/version: '20230129'
+  schema/version: '20230803'
   engine/processors:
     - ascii_composer
     - recognizer
@@ -42,7 +42,7 @@ patch:
     - name: ascii_mode
       reset: 1
     - name: full_shape
-      states: ["半", "全"]
+#      states: ["半", "全"]
     - name: ascii_punct
 #    - options: [zh_hant, zh_cn, zh_tw]
 #      states: ["繁", "簡", "臺"]
