@@ -1,7 +1,7 @@
 # stroke.custom.yaml
 patch:
   schema/name: "筆畫"
-  schema/version: "20210919"
+  schema/version: "20230803"
   switches:
     - name: ascii_mode
       reset: 0
