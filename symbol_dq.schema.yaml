@@ -1,4 +1,4 @@
-# data/symbol_dq.schema.yaml
+# symbol_dq.schema.yaml
 schema:
   schema_id: symbol_dq
   name: symbol_dq
