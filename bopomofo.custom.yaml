@@ -1,6 +1,6 @@
 # bopomofo.custom.yaml
 patch:
-  schema/version: '20230803'
+  schema/version: '20230904'
   engine/processors:
     - ascii_composer
     - recognizer
@@ -41,19 +41,29 @@ patch:
   switches:
     - name: ascii_mode
       reset: 1
+
     - name: full_shape
-#      states: ["半", "全"]
+      #states: ["半", "全"]
+
     - name: ascii_punct
-#    - options: [zh_hant, zh_cn, zh_tw]
-#      states: ["繁", "簡", "臺"]
-#      reset: 1   # 默認第二選項，即簡體
+
+    #- options: [zh_hant, zh_cn, zh_tw]
+    #  states: ["繁", "簡", "臺"]
+    #  reset: 1   # 默認第二選項，即簡體
+
     - name: simplification    # 默認輸出簡體字，繁體字則為OpenCC標準，不喜歡，故改用他法
       reset: 1
+
+    - name: gbk   # 依賴engine/filters/charset_filter@gbk
+      #states: ["擴展","基本"]
+      reset: 1
+
   engine/filters:
     - simplifier
     - simplifier@zh_tw
     - simplifier@zh_cn
     - uniquifier
+    - charset_filter@gbk   #用於支援gbk開關
   zh_tw:   # 名字須與filters@後面的名字一樣
     option_name: zh_tw   #名字須與switches的options名字一樣
     opencc_config: t2tw.json
