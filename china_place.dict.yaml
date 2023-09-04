@@ -1,6 +1,6 @@
 ﻿# china_place.dict.yaml
 # 來源自搜狗「四級行政區劃地名庫」 https://pinyin.sogou.com/dict/detail/index/9465
-# 待改善：移除「市、縣、區、鎮、鄉等行政區劃後綴」
+# 待改善：派生出無「市、縣、區、鎮、鄉」等行政區劃後綴的副本
 
 ---
 name: china_place
