@@ -2,7 +2,7 @@
 
 ---
 name: terra_pinyin.dq
-version: "20210920"
+version: 20230905
 sort: by_weight
 use_preset_vocabulary: true
 import_tables:
