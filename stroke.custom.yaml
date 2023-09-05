@@ -7,7 +7,7 @@ patch:
       reset: 0
     - name: gbk   # 依賴engine/filters/charset_filter@gbk
       states: ["擴展","基本"]
-      reset: 1
+      reset: 0
 
 # 關閉反查
   schem/dependencies:

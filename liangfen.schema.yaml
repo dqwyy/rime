@@ -18,7 +18,7 @@ switches:
     reset: 1
   - name: gbk   # 依賴engine/filters:  - charset_filter@gbk
     states: ["擴展","基本"]
-    reset: 1
+    reset: 0
 
 engine:
   processors:
