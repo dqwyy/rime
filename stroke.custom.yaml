@@ -8,8 +8,7 @@ patch:
     - name: gbk   # 依賴engine/filters/charset_filter@gbk
       states: ["擴展","基本"]
       reset: 1
-    - name: simplification
-      reset: 0
+
 # 關閉反查
   schem/dependencies:
   reverse_lookup:
