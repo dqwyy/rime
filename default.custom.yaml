@@ -1,6 +1,6 @@
 # default.custom.yaml
 patch:
-  "config_version": '20230806'
+  "config_version": '20231003'
   "ascii_composer/switch_key":
     Shift_L: noop
     Shift_R: commit_code
@@ -13,12 +13,12 @@ patch:
     - {accept: "Control+period", toggle: full_shape, when: always}   # 這個快捷鍵本來是給切換中英標點用的，但是我用不到，所以賦給切換全半角，取代缺省以避免在遊戲中造成干擾
 #    - {accept: "Shift+space", toggle: full_shape, when: always}
 #    - {accept: "Control+period", toggle: ascii_punct, when: always}
-    - {accept: "Control+Shift+C", toggle: gbk, when: always}
+#    - {accept: "Control+Shift+C", toggle: gbk, when: always}
 #    - {accept: "Control+Shift+C", toggle: extended_charset, when: always}   # 這個本來是很好的，但是居然不能過濾掉CJK擴展G的字
 
   schema_list:
     - {schema: bopomofo}
-    - {schema: luna_pinyin}
+#    - {schema: luna_pinyin}
     - {schema: liangfen}
     - {schema: stroke}
 #    - {schema: dieziu}
