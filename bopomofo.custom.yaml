@@ -54,13 +54,16 @@ patch:
 
     - name: simplification    # 默認輸出簡體字，繁體字則為OpenCC標準，不喜歡，故改用他法
       reset: 1
+    - name: gbk   # 依賴engine/filters/charset_filter@gbk
+      states: ["擴展","基本"]
+      reset: 1
 
   engine/filters:
     - simplifier
 ##    - simplifier@zh_tw
 ##    - simplifier@zh_cn
     - uniquifier
-    - charset_filter@gbk+emoji   #用於支援gbk開關
+    - charset_filter@gbk   #用於支援gbk開關
     
 ##  zh_tw:   # 名字須與filters@後面的名字一樣
 ##    option_name: zh_tw   #名字須與switches的options名字一樣
@@ -80,3 +83,5 @@ patch:
     tips: "〔符號〕"
 
   translator/dictionary: terra_pinyin.dq   # 修改詞庫為個人總詞庫，以便整合官方詞庫和第三方詞庫
+  key_binder/bindings/+:
+    - {accept: "Control+Shift+C", toggle: gbk, when: always}
