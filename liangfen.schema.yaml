@@ -3,7 +3,7 @@
 schema:
   schema_id: liangfen
   name: 兩分
-  version: "20210919"
+  version: "20231003"
   author:
     - TianHeng <2417647441@qq.com>
   description: |
@@ -74,6 +74,8 @@ menu:
 
 key_binder:
   import_preset: default
+  bindings:
+    - {accept: "Control+Shift+C", toggle: gbk, when: always}
 
 recognizer:
   import_preset: default
