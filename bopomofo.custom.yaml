@@ -1,6 +1,6 @@
 # bopomofo.custom.yaml
 patch:
-  schema/version: '20231003'
+  schema/version: '20231014'
   engine/processors:
     - ascii_composer
     - recognizer
@@ -73,7 +73,7 @@ patch:
 ##    opencc_config: t2s.json
 
   menu:
-    alternative_select_keys: JWERT
+    alternative_select_keys: JUIOHN
   schema/dependencies:
     - symbol_dq
   reverse_lookup:
@@ -85,3 +85,4 @@ patch:
   translator/dictionary: terra_pinyin.dq   # 修改詞庫為個人總詞庫，以便整合官方詞庫和第三方詞庫
   key_binder/bindings/+:
     - {accept: "Control+Shift+C", toggle: gbk, when: always}
+    - {accept: "Shift+W", send: U, when: has_menu}  #兼容我的旧选词习惯，Shift+W相当于Shift+U，选中第二候选词
