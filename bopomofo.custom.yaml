@@ -74,7 +74,7 @@ patch:
 
   menu:
     alternative_select_keys: JUIOHN
-    page_size: 6
+    page_size: 5
   schema/dependencies:
     - symbol_dq
   reverse_lookup:
