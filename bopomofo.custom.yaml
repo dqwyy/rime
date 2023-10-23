@@ -87,3 +87,5 @@ patch:
   key_binder/bindings/+:
     - {accept: "Control+Shift+C", toggle: gbk, when: always}
     - {accept: "Shift+W", send: U, when: has_menu}  #兼容我的旧选词习惯，Shift+W相当于Shift+U，选中第二候选词
+    - {accept: "Shift+E", send: I, when: has_menu}
+    - {accept: "Shift+R", send: O, when: has_menu}
