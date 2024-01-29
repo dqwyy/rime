@@ -86,5 +86,5 @@ patch:
   translator/dictionary: terra_pinyin.dq   # 修改詞庫為個人總詞庫，以便整合官方詞庫和第三方詞庫
   key_binder/bindings/+:
     - {accept: "Control+Shift+C", toggle: gbk, when: always}
-    - {accept: "Shift+W", send: U, when: has_menu}  #兼容我的旧选词习惯，Shift+W相当于Shift+U，选中第二候选词
-    - {accept: "Shift+E", send: I, when: has_menu}
+#    - {accept: "Shift+W", send: U, when: has_menu}  #兼容我的旧选词习惯，Shift+W相当于Shift+U，选中第二候选词
+#    - {accept: "Shift+E", send: I, when: has_menu}
