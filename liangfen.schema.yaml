@@ -17,7 +17,7 @@ switches:
   - name: simplification
     reset: 0
   - name: gbk   # 依賴engine/filters:  - charset_filter@gbk
-    states: ["擴展","基本"]
+#    states: ["擴展","基本"]
     reset: 0
 
 engine:

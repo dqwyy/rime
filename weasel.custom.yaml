@@ -26,4 +26,4 @@ patch:
     hilited_candidate_text_color: 0xFFFFFF  # 高亮候選項的文字顏色，要醒目！
     hilited_candidate_back_color: 0xFF901E  # 高亮候選項的底色，若與背景色不同就會顯出光棒
     candidate_text_color: 0xFFFFFF   # 候選項文字顏色，當與文字顏色不同時指定
-    comment_text_color: 0xA9A9A9     # 編碼提示顏色
+    comment_text_color: 0xdad4ce     # 編碼提示顏色

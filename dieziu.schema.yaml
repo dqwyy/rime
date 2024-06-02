@@ -1,0 +1,148 @@
+# Rime schema
+# encoding: UTF-8 w/o BOM
+
+schema:
+  schema_id: dieziu
+  name: 潮語
+  version: "20240602"
+  author:
+    - 騰達 <dieghv@126.com>
+  description: |
+    潮語拼音輸入法
+    項目主頁 https://kahaani.github.io/dieghv
+    拼音教程 https://kahaani.github.io/gatian
+  dependencies:
+    - luna_pinyin
+
+switches:
+  - name: ascii_mode
+    reset: 0
+  - name: full_shape
+    reset: 0
+  - name: ascii_punct
+    reset: 0
+  - name: simplification
+    reset: 0
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+    - reverse_lookup_translator
+  filters:
+    - simplifier
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    # 去掉聲調
+    - xform/[1-8]//
+
+    # 針對新派的模糊音
+#    - derive/am/ang/
+#    - derive/ap/ak/
+#    - derive/em/eng/
+#    - derive/ep/ek/
+#    - derive/im/ing/
+#    - derive/ip/ik/
+
+    # 兼容漢語拼音的拼寫習慣
+#    - derive/au/ao/
+
+    # 顎化聲母
+#    - derive/zi/ji/
+#    - derive/ci/qi/
+#    - derive/si/xi/
+
+    # 便捷鍵
+#    - derive/ng/f/
+
+    # 允許省略音節尾的鼻化符號
+#    - derive/^(.+)n$/$1/
+    # 允許省略音節尾的喉塞符號
+#    - derive/^(.+)h$/$1/
+
+    # 首字母簡拼
+#    - abbrev/^([a-z]).+$/$1/
+    # 聲母簡拼
+#    - abbrev/^(bh).+$/$1/
+#    - abbrev/^(gh).+$/$1/
+#    - abbrev/^(ng).+$/$1/
+
+    # 针对DQ的潮安北部模糊音及使用习惯进行[输入逻辑]改造：开始
+    # 修正原版拼音「淹、压」逻辑错误
+    - xform/iem/ivm/
+    - xform/iep/ivp/
+    # 韵母「余」由v派生为ee，方便输入
+    - derive/v/ee/
+    # 「淹、压」派生v键为e键，方便输入
+    - derive/ivm/iem/
+    - derive/ivp/iep/
+    # DQ的模糊音和拼写习惯定制
+    - derive/uam/uang/  # 凡
+    - derive/uap/uak/   # 法
+    - derive/p$/b/      # 入声pb兼容
+    - derive/iv([mp])/io$1/  # 「淹、压」的改e为o拼法
+
+translator:
+  dictionary: dieziu
+  spelling_hints: 5
+  preedit_format:
+    # 便捷鍵還原
+#    - xform/f/ng/
+
+    # 修改[输入码显示]为潮州话拼音方案，注意此处[会]继承上面algebra的修改：开始
+    - xform/ee/E/  # 先暂时把ee形式的韵母「余v」改成E，避免后续转换出错
+    - xform/([^i]|^)e([^mp]|$)/$1ê$2/   # 显示韵母「下e」为ê，并修正「淹、压」转化错误，注意此处已删除了声调，所以要加|$匹配结束处
+    - xform/v/e/   # 显示韵母「余v」为e
+    - xform/E/e/   # 把E形式的韵母「余v」转回e
+
+  comment_format: &comment_rules
+    # 將鼻化符號顯示成上標
+    - xform/n(\d|\>)/ⁿ$1/
+
+    # 將聲調顯示成上標
+    - xlit/12345678/¹²³⁴⁵⁶⁷⁸/
+
+    # 修改[提示码]为潮州话拼音方案，注意此处设置是对原始码表进行操作而[不会]继承上面algebra的修改：开始
+    - xform/([^i]|^)e([^mp])/$1ê$2/  # 韵母「下e」修改显示为ê，并修正原版拼音「淹、压」转化错误
+    - xform/v/e/  # 韵母「余v」修改显示为e
+
+reverse_lookup:
+  dictionary: luna_pinyin
+  prefix: "`"
+  suffix: "'"
+  tips: 〔漢語拼音〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+  comment_format: *comment_rules
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "`[a-z]*'?$"

@@ -52,10 +52,10 @@ patch:
     #  states: ["繁", "簡", "臺"]
     #  reset: 1   # 默認第二選項，即簡體
 
-    - name: simplification    # 默認輸出簡體字，繁體字則為OpenCC標準，不喜歡，故改用他法
+    - name: simplification    # 默認輸出簡體字，繁體字為OpenCC標準
       reset: 1
     - name: gbk   # 依賴engine/filters/charset_filter@gbk
-      states: ["擴展","基本"]
+#      states: ["擴展","基本"]
       reset: 1
 
   engine/filters:

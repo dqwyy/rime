@@ -6,7 +6,7 @@ patch:
     - name: ascii_mode
       reset: 0
     - name: gbk   # 依賴engine/filters/charset_filter@gbk
-      states: ["擴展","基本"]
+#      states: ["擴展","基本"]
       reset: 1
 
 # 關閉反查
