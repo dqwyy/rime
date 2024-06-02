@@ -88,13 +88,11 @@ speller:
 
     # 针对DQ的潮安北部模糊音及使用习惯进行[输入逻辑]改造：开始
     # 修正原版拼音「淹、压」逻辑错误
-    - xform/iem/ivm/
-    - xform/iep/ivp/
+    - xform/ie([mp])/iv$1/
     # 韵母「余」由v派生为ee，方便输入
     - derive/v/ee/
     # 「淹、压」派生v键为e键，方便输入
-    - derive/ivm/iem/
-    - derive/ivp/iep/
+    - derive/iv([mp])/ie$1/
     # DQ的模糊音和拼写习惯定制
     - derive/uam/uang/  # 凡
     - derive/uap/uak/   # 法
@@ -108,9 +106,10 @@ translator:
     # 便捷鍵還原
 #    - xform/f/ng/
 
-    # 修改[输入码显示]为潮州话拼音方案，注意此处[会]继承上面algebra的修改：开始
+    # 修改[输入码显示]为潮州话拼音方案：开始
     - xform/ee/E/  # 先暂时把ee形式的韵母「余v」改成E，避免后续转换出错
-    - xform/([^i]|^)e([^mp]|$)/$1ê$2/   # 显示韵母「下e」为ê，并修正「淹、压」转化错误，注意此处已删除了声调，所以要加|$匹配结束处
+    - xform/ie([mp])/iE$1/  # 先暂时把「淹、压」输入时的e键改成E，避免后续转换出错
+    - xform/e/ê/   # 显示韵母「下e」为ê
     - xform/v/e/   # 显示韵母「余v」为e
     - xform/E/e/   # 把E形式的韵母「余v」转回e
 
@@ -121,9 +120,11 @@ translator:
     # 將聲調顯示成上標
     - xlit/12345678/¹²³⁴⁵⁶⁷⁸/
 
-    # 修改[提示码]为潮州话拼音方案，注意此处设置是对原始码表进行操作而[不会]继承上面algebra的修改：开始
-    - xform/([^i]|^)e([^mp])/$1ê$2/  # 韵母「下e」修改显示为ê，并修正原版拼音「淹、压」转化错误
+    # 修改[提示码]为潮州话拼音方案：开始
+    - xform/ie([mp])/iE$1/  # 先暂时把字典中「淹、压」的e改成E，避免后续转换出错
+    - xform/e/ê/  # 韵母「下e」修改显示为ê
     - xform/v/e/  # 韵母「余v」修改显示为e
+    - xform/E/e/  # 把E形式的「淹、压」转回e
 
 reverse_lookup:
   dictionary: luna_pinyin
