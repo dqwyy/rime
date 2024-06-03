@@ -96,8 +96,8 @@ speller:
     # DQ的模糊音和拼写习惯定制
     - derive/uam/uang/  # 凡
     - derive/uap/uak/   # 法
+    - derive/iv([mp])/io$1/  # 「淹、压」的e/o兼容拼法
     - derive/p$/b/      # 入声pb兼容
-    - derive/iv([mp])/io$1/  # 「淹、压」的改e为o拼法
 
 translator:
   dictionary: dieziu
