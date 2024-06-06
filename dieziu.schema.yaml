@@ -117,7 +117,7 @@ translator:
     - xform/v/e/   # 显示韵母「余v」为e
     - xform/E/e/   # 把E形式的韵母「余v」转回e
     # J鍵修正顯示
-    - xform/([bg])(\w+)j/$1h$2/  # bh、gh忘记打h
+    - xform/([bg])(\w+)j/$1h$2/  # bh、gh忘记打h（待改进：ghêj会误显示为ghhe而不是ghe）
     - xform/(\w*)ê(\w*)j/$1e$2/  # 韵母「余v/ee」错打成e
     - xform/([zcs])ij/$1e/       # 子zv/次cv/私sv错打成zi/ci/si
 

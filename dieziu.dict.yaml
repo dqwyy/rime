@@ -14,12 +14,8 @@ version: "2019.02.11"
 sort: by_weight
 use_preset_vocabulary: true
 import_tables:
-  - sogou
-  - china_place
+  - base  # 雾凇拼音基础词库
   - chem
-  - computer
-  - idiom
-  - people
 ...
 
 # DQ增補
@@ -28,6 +24,7 @@ import_tables:
 乜	mik4
 毋	m6
 𤰉	la6
+囥	kvng3
 
 # 字典字音，按音序檢字表排列
 亞	a1

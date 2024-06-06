@@ -2,17 +2,13 @@
 
 ---
 name: terra_pinyin.dq
-version: 20230905
+version: 20240606
 sort: by_weight
 use_preset_vocabulary: true
 import_tables:
   - terra_pinyin  # 母表
-  - sogou
-  - china_place
+  - base  # 雾凇拼音基础词库
   - chem
-  - computer
-  - idiom
-  - people
 ...
 
 𠀾	pei1
