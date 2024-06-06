@@ -8,6 +8,7 @@ use_preset_vocabulary: true
 import_tables:
   - terra_pinyin  # 母表
   - base  # 雾凇拼音基础词库
+  - teo_place
   - chem
 ...
 
