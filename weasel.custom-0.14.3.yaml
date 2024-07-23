@@ -1,4 +1,4 @@
-# weasel.custom.yaml
+# weasel.custom.yaml  适用于0.14.3旧版本
 patch:
   "config_version": "20210919"
   "style/color_scheme": dqwyy #skype
