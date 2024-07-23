@@ -3,13 +3,15 @@
 schema:
   schema_id: liangfen
   name: 兩分
-  version: "20231003"
+  version: "20240724"
   author:
     - TianHeng <2417647441@qq.com>
   description: |
     Use《http://yedict.com/》
     http://yedict.com/
     Dict is from http://yedict.com/
+  icon: liangfen.ico
+  ascii_icon: '两'
 
 switches:
   - name: ascii_mode

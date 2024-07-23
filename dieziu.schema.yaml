@@ -4,7 +4,7 @@
 schema:
   schema_id: dieziu
   name: 潮語
-  version: "20240602"
+  version: "20240724"
   author:
     - 騰達 <dieghv@126.com>
   description: |
@@ -13,6 +13,8 @@ schema:
     拼音教程 https://kahaani.github.io/gatian
   dependencies:
     - luna_pinyin
+  icon: dieziu.ico
+  ascii_icon: 'iê'
 
 switches:
   - name: ascii_mode

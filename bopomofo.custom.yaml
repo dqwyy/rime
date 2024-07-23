@@ -1,6 +1,8 @@
 # bopomofo.custom.yaml
 patch:
-  schema/version: '20231014'
+  schema/version: '20240724'
+  schema/ascii_icon: 'ㄓ'
+  schema/icon: bopomofo.ico
   engine/processors:
     - ascii_composer
     - recognizer

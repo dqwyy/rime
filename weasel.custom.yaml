@@ -1,0 +1,42 @@
+# weasel.custom.yaml
+patch:
+  "config_version": "20240723"
+  "app_options/firefox.exe":  #取消这一莫名其妙针对火狐的默认设置
+  "app_options/Tabby.exe/ascii_mode": true
+
+  "style/color_scheme": dqwyy  #skype
+  "style/display_tray_icon": false  #Win10已自带，故无需赘余
+  "style/font_face": GenYoGothic TW:light  #GenYoGothic TW
+  "style/label_font_face": GenYoGothic TW  #GenYoGothic TW
+  "style/comment_font_face": GenYoGothic TW  #GenYoGothic TW
+  "style/font_point": 16
+  "style/label_font_point": 16
+  "style/comment_font_point": 16
+  "style/horizontal": true
+
+  "style/layout/border_width": 0  #无需边框
+  "style/layout/margin_x": 0  #边框与主体横向留白距离
+  "style/layout/margin_y": 0  #边框与主体纵向留白距离
+  "style/layout/hilite_padding":   #候选字背景色色块与候选字之间的留白距离，≥margin时无缝
+  "style/layout/spacing": 0  #编码与候选字之间距离
+  "style/layout/candidate_spacing": 0  #候选项间隔，≤(hilite_padding*2)时无效
+  "style/layout/round_corner": 0  #候选字背景色块圆角幅度 
+  "style/layout/hilite_spacing": 0  #序号和候选字之间的间隔
+  "style/layout/hilite_padding_x": 10  #候选字背景色色块与候选字之间的横向留白距离（新功能）
+  "style/layout/hilite_padding_y": 5  #候选字背景色色块与候选字之间的纵向留白距离（新功能）
+  "style/layout/corner_radius": 0  #最外面边框的圆角（新功能）
+  "style/hover_type": "hilite"  #鼠标选字显示优化（新功能）
+
+
+  "preset_color_schemes/dqwyy":
+    name: dqwyy
+    author: dqwyy
+    back_color: 0x444444             # 底色
+    border_color: 0x444444           # 邊框顏色，與底色相同則爲無邊框的效果
+    text_color: 0xFFFFFF             # 最原始编码颜色
+    hilited_text_color: 0xFFFFFF     # 高亮文字，即與當前高亮候選對應的那部份輸入碼
+    hilited_back_color: 0x444444     # 設定高亮文字的底色，可起到凸顯高亮部份的作用
+    hilited_candidate_text_color: 0xFFFFFF  # 高亮候選項的文字顏色，要醒目！
+    hilited_candidate_back_color: 0xFF901E  # 高亮候選項的底色，若與背景色不同就會顯出光棒
+    candidate_text_color: 0xFFFFFF   # 候選項文字顏色，當與文字顏色不同時指定
+    comment_text_color: 0xdad4ce     # 編碼提示顏色

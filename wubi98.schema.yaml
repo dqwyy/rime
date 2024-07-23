@@ -3,7 +3,7 @@
 
 schema:
   schema_id: wubi98
-  name: "五笔"
+  name: "五筆"
   version: "0.1"
   author:
     - 發明人 王永民先生
@@ -13,6 +13,8 @@ schema:
     敲 z 鍵進入拼音反查
   dependencies:
     - luna_pinyin
+  icon: wubi98.ico
+  ascii_icon: '五'
 
 switches:
   - name: ascii_mode
