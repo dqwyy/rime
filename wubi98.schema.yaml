@@ -76,7 +76,7 @@ punctuator:
 
 key_binder:
   bindings:
-    - {accept: "Control+Shift+C", toggle: extended_charset, when: always}  # 增加字符集扩充切换开关
+    #- {accept: "Control+Shift+C", toggle: extended_charset, when: always}  # 增加字符集扩充切换开关
   import_preset: default
 
 recognizer:

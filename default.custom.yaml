@@ -16,7 +16,7 @@ patch:
     - {accept: equal, send: Page_Down, when: has_menu}
     - {accept: "Control+Shift+F", toggle: simplification, when: always}
     - {accept: "Control+period", toggle: full_shape, when: always}
-#    - {accept: "Control+Shift+C", toggle: extended_charset, when: always}  # 原版适用于形码的扩展字符集切换开关，改为在各方案内字形启用或改用，此处注释保留仅作参考用
+    - {accept: "Control+Shift+C", toggle: extended_charset, when: always}  #原版适用于形码的扩展字符集切换开关，改为在各方案内字形启用或改用，此处注释保留仅作参考用
 
   schema_list:
     - {schema: bopomofo}
