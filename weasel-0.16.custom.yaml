@@ -1,4 +1,4 @@
-# weasel.custom.yaml
+# weasel.custom.yaml  适用于0.16新版本
 patch:
   "config_version": "20240723"
   "app_options/firefox.exe":  #取消这一莫名其妙针对火狐的默认设置
@@ -14,6 +14,7 @@ patch:
   "style/comment_font_point": 14
   "style/horizontal": true
 
+  #很多参数可以设置为0以方便阅读，因为在这个新版本中很多参数≤hilite_padding不起作用，但是旧版本就不能这样操作
   "style/layout/border_width": 0  #无需边框
   "style/layout/margin_x": 0  #边框与主体横向留白距离
   "style/layout/margin_y": 0  #边框与主体纵向留白距离
