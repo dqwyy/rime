@@ -17,10 +17,9 @@ switches:
   - name: ascii_mode
     reset: 0
   - name: simplification
-    reset: 0
-  - name: gbk   # 依賴engine/filters:  - charset_filter@gbk
-#    states: ["擴展","基本"]
-    reset: 0
+    reset: 1
+  - name: extended_charset
+    reset: 1
 
 engine:
   processors:
@@ -28,7 +27,7 @@ engine:
     - recognizer
     - key_binder
     - speller
-#    - punctuator
+    #- punctuator
     - selector
     - navigator
     - express_editor
@@ -41,31 +40,29 @@ engine:
   translators:
     - punct_translator
     - table_translator  #改用碼表翻譯器以取消簡拼組詞，強制每次只打一個字
-#    - r10n_translator
+    #- r10n_translator
     - reverse_lookup_translator
 
   filters:
     - simplifier
     - uniquifier
-    - charset_filter@gbk   #用於支援gbk開關
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
   delimiter: " '"
   algebra:
-#    - abbrev/^([a-z]).+$/$1/   # 取消首字母簡拼
-#    - derive///   # 以後可能要加一些部首的別名，但是可能會造成重碼增多，所以擱置，有閒或許會編寫兩分輸入法介紹
+    #- abbrev/^([a-z]).+$/$1/   # 取消首字母簡拼
 
 translator:
   dictionary: liangfen
-#  spelling_hints: 4
+  #spelling_hints: 4
   preedit_format:
     - "xlit|v|ü|"
     - xform/iü/iv/
   comment_format:
     - "xlit|v|ü|"
     - xform/iü/iv/
-##  enable_charset_filter: true  #開啟字符集過濾器以支援開關（無法過濾CJK擴展G，已改用engine/filters:  - charset_filter@gbk）
+  enable_charset_filter: true  #開啟字符集過濾器以支援開關（無法過濾CJK擴展G）
   enable_sentence: false  #關閉太極連打，強制每次只打一個字
 
 punctuator:
@@ -77,7 +74,7 @@ menu:
 key_binder:
   import_preset: default
   bindings:
-    - {accept: "Control+Shift+C", toggle: gbk, when: always}
+    - {accept: "Control+Shift+C", toggle: extended_charset, when: always}
 
 recognizer:
   import_preset: default

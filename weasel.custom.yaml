@@ -25,7 +25,6 @@ patch:
   "style/layout/hilite_padding_x": 10  #候选字背景色色块与候选字之间的横向留白距离（新功能）
   "style/layout/hilite_padding_y": 5  #候选字背景色色块与候选字之间的纵向留白距离（新功能）
   "style/layout/corner_radius": 0  #最外面边框的圆角（新功能）
-  "style/hover_type": "hilite"  #鼠标选字显示优化（新功能）
 
 
   "preset_color_schemes/dqwyy":

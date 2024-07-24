@@ -11,7 +11,7 @@ patch:
     - punctuator
     - selector
     - navigator
-    - express_editor    # 取消語句流
+    - express_editor    #取消語句流
   punctuator/half_shape:
     "!": {commit: "！"}
     "\"": {pair: ["「", "」"]}
@@ -43,36 +43,17 @@ patch:
   switches:
     - name: ascii_mode
       reset: 1
-
     - name: full_shape
       reset: 0
-
     - name: ascii_punct
       reset: 0
-
-    #- options: [zh_hant, zh_cn, zh_tw]
-    #  states: ["繁", "簡", "臺"]
-    #  reset: 1   # 默認第二選項，即簡體
-
-    - name: simplification    # 默認輸出簡體字，繁體字為OpenCC標準
-      reset: 1
-    - name: gbk   # 依賴engine/filters/charset_filter@gbk
-#      states: ["擴展","基本"]
+    - name: simplification    #默認輸出簡體字，繁體字為OpenCC標準
       reset: 1
 
   engine/filters:
     - simplifier
-##    - simplifier@zh_tw
-##    - simplifier@zh_cn
     - uniquifier
-    - charset_filter@gbk   #用於支援gbk開關
-    
-##  zh_tw:   # 名字須與filters@後面的名字一樣
-##    option_name: zh_tw   #名字須與switches的options名字一樣
-##    opencc_config: t2tw.json
-##  zh_cn:
-##    option_name: zh_cn
-##    opencc_config: t2s.json
+    - lua_filter@charset_filter
 
   menu:
     alternative_select_keys: JUIOHN
@@ -85,8 +66,8 @@ patch:
     prefix: "`"
     tips: "〔符號〕"
 
-  translator/dictionary: terra_pinyin.dq   # 修改詞庫為個人總詞庫，以便整合官方詞庫和第三方詞庫
+  translator/dictionary: terra_pinyin.dq   #修改詞庫為個人總詞庫，以便整合官方詞庫和第三方詞庫
+  translator/enable_charset_filter: true
   key_binder/bindings/+:
-    - {accept: "Control+Shift+C", toggle: gbk, when: always}
     - {accept: "Shift+W", send: U, when: has_menu}  #兼容我的旧选词习惯，Shift+W相当于Shift+U，选中第二候选词
     - {accept: "Shift+E", send: I, when: has_menu}

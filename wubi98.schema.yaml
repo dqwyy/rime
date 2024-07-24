@@ -58,6 +58,8 @@ translator:
   max_phrase_length: 4
   disable_user_dict_for_patterns:
     - "^z.*$"
+  preedit_format:
+    - "xlit|qwertyuiopasdfghjklzxcvbnm|金人月白禾言立水火之工木大土王目日口田通幺又女子已山|"
 
 reverse_lookup:
   dictionary: luna_pinyin
