@@ -11,7 +11,7 @@ patch:
   "style/comment_font_face": GenYoGothic TW  #GenYoGothic TW
   "style/font_point": 16
   "style/label_font_point": 16
-  "style/comment_font_point": 16
+  "style/comment_font_point": 14
   "style/horizontal": true
 
   "style/layout/border_width": 0  #无需边框
@@ -25,6 +25,7 @@ patch:
   "style/layout/hilite_padding_x": 10  #候选字背景色色块与候选字之间的横向留白距离（新功能）
   "style/layout/hilite_padding_y": 5  #候选字背景色色块与候选字之间的纵向留白距离（新功能）
   "style/layout/corner_radius": 0  #最外面边框的圆角（新功能）
+  "style/layout/enhanced_position": true  #允許在光標位置獲取失敗時於窗口左上角繪製候選框而不是桌面左上角（新功能）
 
 
   "preset_color_schemes/dqwyy":
