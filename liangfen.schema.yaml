@@ -19,7 +19,7 @@ switches:
   - name: simplification
     reset: 1
   - name: extended_charset
-    reset: 1
+    reset: 0
 
 engine:
   processors:
