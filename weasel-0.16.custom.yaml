@@ -4,11 +4,11 @@ patch:
   "app_options/firefox.exe":  #取消这一莫名其妙针对火狐的默认设置
   "app_options/Tabby.exe/ascii_mode": true
 
-  "style/color_scheme": dqwyy  #skype
+  "style/color_scheme": dqwyy
   "style/display_tray_icon": false  #Win10已自带，故无需赘余
-  "style/font_face": GenYoGothic TW:light  #GenYoGothic TW
-  "style/label_font_face": GenYoGothic TW  #GenYoGothic TW
-  "style/comment_font_face": GenYoGothic TW  #GenYoGothic TW
+  "style/font_face": GenYoGothic TW:light
+  "style/label_font_face": GenYoGothic TW
+  "style/comment_font_face": GenYoGothic TW
   "style/font_point": 16
   "style/label_font_point": 16
   "style/comment_font_point": 14
