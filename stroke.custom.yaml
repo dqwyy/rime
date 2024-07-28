@@ -26,7 +26,7 @@ patch:
   key_binder/bindings:
     - { when: always, accept: "n", send: "d" }   # 相容捺
     - { when: always, accept: "t", send: "h" }   # 相容提，但顯示上仍需後續改進
-    #- {accept: "Control+Shift+C", toggle: extended_charset, when: always}
+    - {accept: "Control+Shift+C", toggle: extended_charset, when: always}
 
   translator/preedit_format:
     #- xlit/hspdz/横豎撇點折/

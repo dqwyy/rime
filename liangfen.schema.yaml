@@ -74,7 +74,7 @@ menu:
 key_binder:
   import_preset: default
   bindings:
-    #- {accept: "Control+Shift+C", toggle: extended_charset, when: always}
+    - {accept: "Control+Shift+C", toggle: extended_charset, when: always}
 
 recognizer:
   import_preset: default
