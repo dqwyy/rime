@@ -9,8 +9,8 @@ patch:
       reset: 0
     - name: simplification
       reset: 1
-    - name: extended_charset
-      reset: 0
+    - name: gbk
+      reset: 1
 
 # 關閉反查
   schem/dependencies:
@@ -18,7 +18,7 @@ patch:
   recognizer/patterns/reverse_lookup:
 
   translator/enable_sentence: false  #關閉太極連打，強制每次只打一個字
-  translator/enable_charset_filter: true  #開啟字符集過濾器以支援開關（無法過濾CJK擴展G）
+  #translator/enable_charset_filter: true  #開啟字符集過濾器以支援開關（無法過濾CJK擴展G）
 
   speller/algebra:
     - xform/n/d/  #刪除捺，正名為點
@@ -26,7 +26,7 @@ patch:
   key_binder/bindings:
     - { when: always, accept: "n", send: "d" }   # 相容捺
     - { when: always, accept: "t", send: "h" }   # 相容提，但顯示上仍需後續改進
-    - {accept: "Control+Shift+C", toggle: extended_charset, when: always}
+    - {accept: "Control+Shift+C", toggle: gbk, when: always}
 
   translator/preedit_format:
     #- xlit/hspdz/横豎撇點折/
@@ -46,3 +46,4 @@ patch:
   engine/filters:
     - simplifier
     - uniquifier
+    - charset_filter@gbk

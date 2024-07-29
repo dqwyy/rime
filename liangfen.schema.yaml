@@ -18,8 +18,8 @@ switches:
     reset: 0
   - name: simplification
     reset: 1
-  - name: extended_charset
-    reset: 0
+  - name: gbk
+    reset: 1
 
 engine:
   processors:
@@ -46,6 +46,7 @@ engine:
   filters:
     - simplifier
     - uniquifier
+    - charset_filter@gbk
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
@@ -62,7 +63,7 @@ translator:
   comment_format:
     - "xlit|v|ü|"
     - xform/iü/iv/
-  enable_charset_filter: true  #開啟字符集過濾器以支援開關（無法過濾CJK擴展G）
+  #enable_charset_filter: true  #開啟字符集過濾器以支援開關（無法過濾CJK擴展G）
   enable_sentence: false  #關閉太極連打，強制每次只打一個字
 
 punctuator:
@@ -74,7 +75,7 @@ menu:
 key_binder:
   import_preset: default
   bindings:
-    - {accept: "Control+Shift+C", toggle: extended_charset, when: always}
+    - {accept: "Control+Shift+C", toggle: gbk, when: always}
 
 recognizer:
   import_preset: default
