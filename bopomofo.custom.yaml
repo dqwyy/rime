@@ -49,14 +49,11 @@ patch:
       reset: 0
     - name: simplification    #默認輸出簡體字，繁體字為OpenCC標準
       reset: 1
-    - name: gb2312
-      reset: 1
 
   engine/filters:
     - simplifier
     - uniquifier
     - lua_filter@charset_filter
-    - charset_filter@gb2312
 
   menu:
     alternative_select_keys: JUIOHN
@@ -73,4 +70,3 @@ patch:
   key_binder/bindings/+:
     - {accept: "Shift+W", send: U, when: has_menu}  #兼容我的旧选词习惯，Shift+W相当于Shift+U，选中第二候选词
     - {accept: "Shift+E", send: I, when: has_menu}
-    - {accept: "Control+Shift+C", toggle: "gb2312", when: always}
