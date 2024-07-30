@@ -6,7 +6,7 @@ version: 20240606
 sort: by_weight
 use_preset_vocabulary: true
 import_tables:
-  - terra_pinyin.min  # 母表，GB2312版子集化
+  - terra_pinyin  # 母表
   - base  # 雾凇拼音基础词库
   - teo_place
   - chem
