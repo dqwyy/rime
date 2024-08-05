@@ -1,0 +1,16 @@
+#參考 https://github.com/BYVoid/OpenCC/blob/master/data/dictionary/TWVariants.txt
+#用于把OpenCC繁体改为dq繁体，直接作用於詞組，手動修改單字詞頻，對象為方案碼表和八股文，DEL僅作用於碼表
+
+羣	群	DEL
+牀	床	DEL
+峯	峰	DEL
+麪	麵	DEL
+爲	為
+僞	偽
+裏	裡
+喫	吃
+竈	灶
+纔	才
+鬥	鬪
+畫	畵
+臺灣	台灣

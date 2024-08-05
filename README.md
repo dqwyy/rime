@@ -12,3 +12,4 @@
 - [定製指南-初階](https://github.com/rime/home/wiki/CustomizationGuide)
 - [方案設計-中階](https://github.com/rime/home/wiki/RimeWithSchemata)
 - [雪齋的文檔](https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md)
+- [字符集](https://github.com/rime-aca/character_set)

@@ -1,0 +1,17 @@
+# bopomofo.dq.dict.yaml
+
+---
+name: bopomofo.dq
+version: 20240606
+sort: by_weight
+use_preset_vocabulary: true
+import_tables:
+  - bopomofo  # 母表min化
+  - base  # 雾凇拼音基础词库
+  - teo_place
+  - chem
+...
+
+𠀾	pei1
+㐎	wen2
+𤰉	la2

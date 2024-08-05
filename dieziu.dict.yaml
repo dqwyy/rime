@@ -1123,6 +1123,7 @@ import_tables:
 膂	li2
 蠡	li2
 邐	li2
+裡	li2
 裏	li2
 醴	li2
 鋰	li2
@@ -2276,6 +2277,8 @@ import_tables:
 蚪	dau2
 陡	dau2
 鈄	dau2
+鬪	dau3
+鬦	dau3
 鬥	dau3
 投	dau5
 骰	dau5
@@ -2467,6 +2470,7 @@ import_tables:
 蚤	zau2
 笟	zau2
 奏	zau3
+灶	zau3
 竈	zau3
 造	zau6
 慥	zau6
@@ -2602,6 +2606,8 @@ import_tables:
 都	dou1
 唗	dou1
 肚	dou2
+鬪	dou3
+鬦	dou3
 鬥	dou3
 圖	dou5
 屠	dou5
@@ -3768,7 +3774,7 @@ import_tables:
 丰	hong1
 諷	hong1
 封	hong1
-峯	hong1
+峰	hong1
 烽	hong1
 灃	hong1
 葑	hong1
@@ -6523,9 +6529,11 @@ import_tables:
 衛	ue6
 衞	ue6
 話	ue7
+畵	ue7
 畫	ue7
 劃	ueh8
 砉	ueh8
+畵	ueh8
 畫	ueh8
 杯	bue1
 飛	bue1
@@ -6696,6 +6704,7 @@ import_tables:
 餧	ui2
 畏	ui3
 謂	ui3
+為	ui5
 爲	ui5
 圍	ui5
 幃	ui5
@@ -6823,6 +6832,7 @@ import_tables:
 嵬	ngui5
 巍	ngui5
 隗	ngui5
+偽	ngui6
 僞	ngui6
 魏	ghui7
 非	hui1
@@ -7679,7 +7689,7 @@ import_tables:
 詘	kuk4
 矻	kuk4
 拳	kung5
-羣	kung5
+群	kung5
 麇	kung5
 麕	kung5
 分	hung1
@@ -7989,7 +7999,7 @@ import_tables:
 瘡	cvng1
 艙	cvng1
 刺	cvng3
-牀	cvng5
+床	cvng5
 霜	svng1
 孀	svng1
 桑	svng1

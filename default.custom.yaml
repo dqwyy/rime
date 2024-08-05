@@ -27,3 +27,4 @@ patch:
     #- {schema: bopomofo.full}
   "switcher/hotkeys":
     - "Control+Shift+O"
+    - "Control+grave"
