@@ -20,11 +20,12 @@ patch:
 
   schema_list:
     - {schema: bopomofo}
+    - {schema: romaza}
     - {schema: dieziu}
     - {schema: liangfen}
     - {schema: stroke}
     - {schema: wubi98}
-    #- {schema: bopomofo.full}
+    - {schema: luna_pinyin}
   "switcher/hotkeys":
     - "Control+Shift+O"
     - "Control+grave"

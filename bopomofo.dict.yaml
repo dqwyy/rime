@@ -30,6 +30,9 @@ min_phrase_weight: 100
 ...
 
 # 已GB12345化，已dqCC化
+窓	chuang1
+仮	jia3
+氷	bing1
 〇	ling2
 㥮	chao3
 㥮	zhou4
@@ -2565,7 +2568,6 @@ min_phrase_weight: 100
 戳	chuo1
 戴	dai4
 戶	hu4
-户	hu4
 戽	hu4
 戾	li4
 房	fang2

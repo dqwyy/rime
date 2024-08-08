@@ -1,0 +1,70 @@
+﻿# romaza.schema.yaml 韩语罗马字输入法，dq自用
+
+schema:
+  schema_id: romaza
+  name: "韓語"
+  version: "20240806"
+  author:
+    - "dqwyy <me@dqwyy.moe>"
+
+switches:
+  - name: ascii_mode
+    reset: 0
+  - name: full_shape
+    reset: 0
+  - name: ascii_punct
+    reset: 1
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+  filters:
+    - uniquifier
+
+speller:
+  alphabet: abcdefghijklmnopqrstuvwxyzUIO
+  delimiter: " '"
+  algebra:
+    - derive/wo/weo/  #워依其發音及書寫派生為weo
+    - derive/ui/yi/   #으依其萬國碼名稱派生為yi
+    - derive/c/ch/    #ㅊ依文觀部羅馬字派生為ch
+    - derive/^([aeiouyw])/x$1/  #定義X鍵為初聲ㅇ，協助分詞
+    - derive/^([^jUIO].*)$/$1q/ #定義Q鍵為音節結束標記，協助分詞
+
+translator:
+  dictionary: romaza
+  enable_user_dict: false  #關閉用戶詞典，確保候選欄諺文在前漢字在後
+  preedit_format:
+    #美化輸入碼顯示
+    - xform/ x(\S)/ $1/  #X鍵顯示為空格，提示分詞
+    - xform/^x(\S)/$1/
+    - xform/q / /        #Q鍵顯示為空格，提示分詞
+    - xform/q$/ /
+    - xform/j/字/  #諺文兼容字母啓用提示
+    - xform/U/初/  #諺文字母初聲啓用提示
+    - xform/I/中/  #諺文字母中聲啓用提示
+    - xform/O/終/  #諺文字母終聲啓用提示
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+  bindings: 
+    - {accept: "Shift+J", send: 1, when: has_menu}  #兼容注音方案的大寫J首選
