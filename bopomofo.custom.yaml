@@ -48,7 +48,7 @@ patch:
     - name: ascii_punct
       reset: 0
     - name: simplification    #默認輸出簡體字，繁體字為OpenCC標準
-      reset: 1
+      #reset: 1
 
   engine/filters:
     - simplifier
