@@ -16,7 +16,6 @@ use_preset_vocabulary: true
 import_tables:
   - base  # 雾凇拼音基础词库
   - teo_place
-  - chem
 ...
 
 # DQ增補
@@ -28,6 +27,7 @@ import_tables:
 囥	kvng3
 什	sik4
 什	sih4
+挈	kieh8
 
 # 字典字音，按音序檢字表排列
 亞	a1
