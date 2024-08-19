@@ -30,6 +30,9 @@ min_phrase_weight: 100
 ...
 
 # 已dq12345化，已dqCC化
+舘	guan3
+舖	pu4
+儛	wu3
 吀	mie1
 佮	ge2
 窓	chuang1
@@ -8873,7 +8876,7 @@ min_phrase_weight: 100
 一下兒	yi2 xia4 r5
 一下子	yi2 xia4 zi5
 一不小心	yi2 bu4 xiao3 xin1
-一不拗衆	yi1 bu2 niu4 zhong4
+一不拗眾	yi1 bu2 niu4 zhong4
 一丘一壑	yi4 qiu1 yi2 huo4
 一丘之貉	yi4 qiu1 zhi1 he2
 一中一臺	yi4 zhong1 yi4 tai2
@@ -8927,7 +8930,7 @@ min_phrase_weight: 100
 一切從簡	yi2 qie4 cong2 jian3
 一切現成	yi2 qie4 xian4 cheng2
 一切經音義	yi2 qie4 jing1 yin1 yi4
-一切衆生	yi2 qie4 zhong4 sheng1
+一切眾生	yi2 qie4 zhong4 sheng1
 一到處	yi2 dao4 chu4
 一剎那	yi2 cha4 na4
 一剗	yi2 chan4
@@ -9239,7 +9242,7 @@ min_phrase_weight: 100
 一落	yi2 luo4
 一落千丈	yi2 luo4 qian1 zhang4
 一落索	yi2 luo4 suo3
-一虎難敵衆犬	yi4 hu3 nan2 di2 zhong4 quan3
+一虎難敵眾犬	yi4 hu3 nan2 di2 zhong4 quan3
 一處	yi2 chu4
 一號木桿	yi1 hao4 mu4 gan1
 一行	yi2 xing4
@@ -11733,9 +11736,9 @@ min_phrase_weight: 100
 以和為貴	yi3 he2 wei2 gui4
 以夷伐夷	yi3 yi2 fa1 yi2
 以字行	yi3 zi4 xing2
-以寡擊衆	yi3 gua3 ji2 zhong4
+以寡擊眾	yi3 gua3 ji2 zhong4
 以實相告	yi3 shi2 xiang1 gao4
-以少克衆	yi3 shao3 ke4 zhong4
+以少克眾	yi3 shao3 ke4 zhong4
 以少勝多	yi3 shao3 sheng4 duo1
 以己度人	yi3 ji3 duo4 ren2
 以弱制強	yi3 ruo4 zhi4 qiang2
@@ -14139,8 +14142,8 @@ min_phrase_weight: 100
 公立學校	gong1 li4 xue2 xiao4
 公約數	gong1 yue1 shu4
 公羊傳	gong1 yang2 zhuan4
-公衆傳播	gong1 zhong4 chuan2 bo4
-公衆參與	gong1 zhong4 can1 yu4
+公眾傳播	gong1 zhong4 chuan2 bo4
+公眾參與	gong1 zhong4 can1 yu4
 公許碼頭	gong1 xu3 ma3 tou5
 公諸同好	gong1 zhu1 tong2 hao4
 公證結婚	gong1 zheng4 jie2 hun1
@@ -17709,8 +17712,8 @@ min_phrase_weight: 100
 合縱	he2 zong2
 合縱連橫	he2 zong4 lian2 heng2
 合而為一	he2 er2 wei2 yi1
-合衆為一	he2 zhong4 wei2 yi1
-合衆銀行	he2 zhong4 yin2 hang2
+合眾為一	he2 zhong4 wei2 yi1
+合眾銀行	he2 zhong4 yin2 hang2
 合轍	he2 zhe2
 合轍兒	he2 zhe2 r5
 合轍押韻	he2 zhe2 ya1 yun4
@@ -19457,7 +19460,7 @@ min_phrase_weight: 100
 嘩嘩	hua1 hua1
 嘩然	hua2 ran2
 嘩笑	hua2 xiao4
-嘩衆取寵	hua2 zhong4 qu3 chong3
+嘩眾取寵	hua2 zhong4 qu3 chong3
 嘩變	hua2 bian4
 嘬嘬	chuai4 chuai4
 嘬嚃	chuai4 ta4
@@ -21557,9 +21560,9 @@ min_phrase_weight: 100
 大處落墨	da4 chu4 luo4 mo4
 大蜡	da4 zha4
 大蟲口裡倒涎	da4 chong2 kou3 li3 dao4 xian2
-大衆傳播	da4 zhong4 chuan2 bo1
-大衆傳播	da4 zhong4 chuan2 bo4
-大衆傳播媒體	da4 zhong4 chuan2 bo4 mei2 ti3
+大眾傳播	da4 zhong4 chuan2 bo1
+大眾傳播	da4 zhong4 chuan2 bo4
+大眾傳播媒體	da4 zhong4 chuan2 bo4 mei2 ti3
 大行	da4 xing2
 大行人	da4 xing2 ren2
 大行其道	da4 xing2 qi2 dao4
@@ -25466,7 +25469,7 @@ min_phrase_weight: 100
 幾能勾	ji3 neng2 gou1
 幾至	ji1 zhi4
 幾般	ji3 ban1
-幾衆	ji3 zhong4
+幾眾	ji3 zhong4
 幾許	ji3 xu3
 幾諫	ji1 jian4
 幾近	ji1 jin4
@@ -32806,7 +32809,7 @@ min_phrase_weight: 100
 普寧	pu3 ning2
 普寧市	pu3 ning2 shi4
 普度	pu3 du4
-普度衆生	pu3 du4 zhong4 sheng1
+普度眾生	pu3 du4 zhong4 sheng1
 普朗克常數	pu3 lang3 ke4 chang2 shu4
 普浹	pu3 jia2
 普羅扎克	pu3 luo2 zha1 ke4
@@ -36138,7 +36141,7 @@ min_phrase_weight: 100
 民窮財匱	min2 qiong2 cai2 kui4
 民答那峨海	min2 da1 na4 e2 hai3
 民胞物與	min2 bao1 wu4 yu3
-民衆教育	min2 zhong4 jiao4 yu4
+民眾教育	min2 zhong4 jiao4 yu4
 民調	min2 diao4
 民謠歌曲	min2 yao2 ge1 qu3
 民間	min2 jian1
@@ -39515,7 +39518,7 @@ min_phrase_weight: 100
 床沿	chuang2 yan2
 床鋪	chuang2 pu4
 牆上泥皮	qiang2 shang4 ni2 pi2
-牆倒衆人推	qiang2 dao3 zhong4 ren2 tui1
+牆倒眾人推	qiang2 dao3 zhong4 ren2 tui1
 牆垛子	qiang2 duo3 zi5
 牆有縫	qiang2 you3 feng4
 片中	pian4 zhong1
@@ -40931,7 +40934,7 @@ min_phrase_weight: 100
 當艄拿舵	dang1 shao1 na2 duo4
 當艄順	dang1 shao1 shun4
 當花	dang1 hua1
-當衆	dang1 zhong4
+當眾	dang1 zhong4
 當行	dang1 hang2
 當行出色	dang1 hang2 chu1 se4
 當行家	dang1 hang2 jia1
@@ -47720,7 +47723,7 @@ min_phrase_weight: 100
 與聞	yu4 wen2
 與虎添翼	yu3 hu3 tian1 yi4
 與虎謀皮	yu3 hu3 mou2 pi2
-與衆不同	yu3 zhong4 bu4 tong2
+與眾不同	yu3 zhong4 bu4 tong2
 與賽	yu4 sai4
 與黨	yu3 dang3
 興中會	xing1 zhong1 hui4
@@ -47732,7 +47735,7 @@ min_phrase_weight: 100
 興作	xing1 zuo4
 興修	xing1 xiu1
 興兵	xing1 bing1
-興兵動衆	xing1 bing1 dong4 zhong4
+興兵動眾	xing1 bing1 dong4 zhong4
 興凱刺鰟鮍	xing1 kai3 ci4 pang2 pi2
 興凱湖	xing1 kai3 hu2
 興利	xing1 li4
@@ -47778,7 +47781,7 @@ min_phrase_weight: 100
 興山縣	xing1 shan1 xian4
 興工	xing1 gong1
 興師	xing1 shi1
-興師動衆	xing1 shi1 dong4 zhong4
+興師動眾	xing1 shi1 dong4 zhong4
 興師問罪	xing1 shi1 wen4 zui4
 興師見罪	xing1 shi1 jian4 zui4
 興席	xing1 xi2
@@ -50068,8 +50071,8 @@ min_phrase_weight: 100
 蠷蝚	qu2 rou2
 蠹啄剖梁柱	du4 zhuo2 pou3 liang2 zhu4
 蠹居棋處	du4 ju1 qi2 chu3
-蠹衆木折	du4 zhong4 mu4 zhe2
-蠹衆而木折	du4 zhong4 er2 mu4 zhe2
+蠹眾木折	du4 zhong4 mu4 zhe2
+蠹眾而木折	du4 zhong4 er2 mu4 zhe2
 蠹魚子	du4 yu2 zi5
 蠻子	man2 zi5
 蠻橫	man2 heng4
@@ -50108,27 +50111,27 @@ min_phrase_weight: 100
 血量	xie3 liang4
 血鑽	xie3 zuan4
 血鑽	xue4 zuan4
-衆叛親離	zhong4 pan4 qin1 li2
-衆口稱善	zhong4 kou3 cheng1 shan4
-衆口難調	zhong4 kou3 nan2 tiao2
-衆喣漂山	zhong4 xu3 piao1 shan1
-衆寡難敵	zhong4 gua3 nan2 di2
-衆少不敵	zhong4 shao3 bu4 di2
-衆少成多	zhong4 shao3 cheng2 duo1
-衆怒難任	zhong4 nu4 nan2 ren2
-衆怒難犯	zhong4 nu4 nan2 fan4
-衆所熟知	zhong4 suo3 shu2 zhi1
-衆散親離	zhong4 san4 qin1 li2
-衆數	zhong4 shu4
-衆曲不容直	zhong4 qu1 bu4 rong2 zhi2
-衆毛攢毬	zhong4 mao2 zan3 qiu2
-衆毛攢裘	zhong4 mao2 cuan2 qiu2
-衆生好度	zhong4 sheng1 hao3 du4
-衆生皆有佛性	zhong4 sheng1 jie1 you3 fou2 xing4
-衆生相	zhong4 sheng1 xiang4
-衆盲摸象	zhong4 mang2 mo1 xiang4
-衆矢之的	zhong4 shi3 zhi1 di4
-衆香子	zhong4 xiang1 zi5
+眾叛親離	zhong4 pan4 qin1 li2
+眾口稱善	zhong4 kou3 cheng1 shan4
+眾口難調	zhong4 kou3 nan2 tiao2
+眾喣漂山	zhong4 xu3 piao1 shan1
+眾寡難敵	zhong4 gua3 nan2 di2
+眾少不敵	zhong4 shao3 bu4 di2
+眾少成多	zhong4 shao3 cheng2 duo1
+眾怒難任	zhong4 nu4 nan2 ren2
+眾怒難犯	zhong4 nu4 nan2 fan4
+眾所熟知	zhong4 suo3 shu2 zhi1
+眾散親離	zhong4 san4 qin1 li2
+眾數	zhong4 shu4
+眾曲不容直	zhong4 qu1 bu4 rong2 zhi2
+眾毛攢毬	zhong4 mao2 zan3 qiu2
+眾毛攢裘	zhong4 mao2 cuan2 qiu2
+眾生好度	zhong4 sheng1 hao3 du4
+眾生皆有佛性	zhong4 sheng1 jie1 you3 fou2 xing4
+眾生相	zhong4 sheng1 xiang4
+眾盲摸象	zhong4 mang2 mo1 xiang4
+眾矢之的	zhong4 shi3 zhi1 di4
+眾香子	zhong4 xiang1 zi5
 行三坐五	xing2 san1 zuo4 wu3
 行不及言	xing2 bu4 ji2 yan2
 行不得	xing2 bu5 de5
@@ -50242,7 +50245,7 @@ min_phrase_weight: 100
 行己有恥	xing2 ji3 you3 chi3
 行己有方	xing2 ji3 you3 fang1
 行市	hang2 shi4
-行師動衆	xing2 shi1 dong4 zhong4
+行師動眾	xing2 shi1 dong4 zhong4
 行幫	hang2 bang1
 行年	xing2 nian2
 行幸	xing2 xing4
@@ -50462,7 +50465,7 @@ min_phrase_weight: 100
 行車距離	xing2 che1 ju4 li2
 行車速率	xing2 che1 su4 lv4
 行軍	xing2 jun1
-行軍動衆	xing2 jun1 dong4 zhong4
+行軍動眾	xing2 jun1 dong4 zhong4
 行軍床	xing2 jun1 chuang2
 行軍禮	xing2 jun1 li3
 行軍路線	xing2 jun1 lu4 xian4
@@ -51306,7 +51309,7 @@ min_phrase_weight: 100
 親迎	qin1 ying4
 親近	qin1 jin4
 親隨	qin1 sui2
-親離衆叛	qin1 li2 zhong4 pan4
+親離眾叛	qin1 li2 zhong4 pan4
 親類	qin1 lei4
 親香	qin1 xiang1
 親駕	qin1 jia4
@@ -52178,7 +52181,7 @@ min_phrase_weight: 100
 謠傳	yao2 chuan2
 謠言	yao2 yan2
 謠言	yao2 yan5
-謠言惑衆	yao2 yan5 huo4 zhong4
+謠言惑眾	yao2 yan5 huo4 zhong4
 謠言止於智者	yao2 yan5 zhi3 yu2 zhi4 zhe3
 謠言紛飛	yao2 yan5 fen1 fei1
 謠諑紛傳	yao2 zhuo2 fen1 chuan2
