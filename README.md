@@ -1,5 +1,6 @@
 使用者資料夾
 - `~/.config/ibus/rime`
+- `~/.local/share/fcitx5/rime`
 - `%APPDATA%\Rime`
 
 共享資料夾
