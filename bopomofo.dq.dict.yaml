@@ -2,12 +2,14 @@
 
 ---
 name: bopomofo.dq
-version: 20240606
+version: 20260205
 sort: by_weight
 use_preset_vocabulary: true
+max_phrase_length: 7
+min_phrase_weight: 100
 import_tables:
   - bopomofo  # 母表min化
-  - base  # 雾凇拼音基础词库
+#  - base  # 雾凇拼音基础词库
   - teo_place
   - chem
 ...
