@@ -9,9 +9,9 @@ max_phrase_length: 7
 min_phrase_weight: 100
 import_tables:
   - bopomofo  # 母表min化
-#  - base  # 雾凇拼音基础词库
+  - jichu
   - teo_place
-  - chem
+  - huaxue
 ...
 
 𠀾	pei1

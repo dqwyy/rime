@@ -100,6 +100,7 @@ speller:
     - derive/uap/uak/   # 法
     - derive/iv([mp])/io$1/  # 「淹、压」的e/o兼容拼法
     - derive/p$/b/      # 入声pb兼容
+    - derive/k$/g/      # 入声kg兼容
     # 利用没用到的J键进行输入bh、gh、e修正
     - derive/([bg])h(\w+)/$1$2j/  # bh、gh忘记打h
     - derive/(\w*)v(\w*)/$1e$2j/  # 韵母「余v/ee」错打成e
@@ -125,7 +126,7 @@ translator:
 
   comment_format: &comment_rules
     # 將鼻化符號顯示成上標
-    - xform/n(\d|\>)/ⁿ$1/
+    #- xform/n(\d|\>)/ⁿ$1/
 
     # 將聲調顯示成上標
     - xlit/12345678/¹²³⁴⁵⁶⁷⁸/
