@@ -14,7 +14,6 @@ version: "20260205"
 sort: by_weight
 use_preset_vocabulary: true
 import_tables:
-#  - base  # 雾凇拼音基础词库
   - teo_place
 ...
 
