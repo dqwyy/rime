@@ -1,7 +1,6 @@
 --[[
 charset_filter: 滤除非白名单内的汉字，且拒绝所有兼容区汉字
 白名单由 gb2312.txt 和 user_han.txt（可选）合并而成
-该编自 https://github.com/riverscn/rime-forge/blob/main/lua/charset.lua
 ]]
 
 local allowed_han = {}
