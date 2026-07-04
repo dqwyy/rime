@@ -54,10 +54,10 @@ patch:
     ##- name: gbk  #依賴engine/filters/charset_filter@gbk  #已被上方的lua替代
     ##  reset: 1
   engine/filters:
-    - simplifier
-    - uniquifier
     - lua_filter@charset_filter
     ##- charset_filter@gbk    #已被上方的lua替代
+    - simplifier
+    - uniquifier
 
   menu:
     alternative_select_keys: JUIOHN
