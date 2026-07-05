@@ -45,5 +45,5 @@ patch:
       - express_editor
   engine/filters:
     - simplifier
-    - uniquifier
     - charset_filter@gbk
+    - uniquifier

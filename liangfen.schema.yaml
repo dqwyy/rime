@@ -45,8 +45,8 @@ engine:
 
   filters:
     - simplifier
-    - uniquifier
     - charset_filter@gbk
+    - uniquifier
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
