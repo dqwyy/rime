@@ -1,3 +1,4 @@
+-- 基於 https://github.com/riverscn/rime-forge/blob/main/lua/charset.lua
 -- 自定义增补字，总是保留
 local extra = {
     0x30EDE, -- 𰻞 biang
